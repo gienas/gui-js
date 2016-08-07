@@ -9,28 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-require('../../public/css/styles.css');
-var hero_service_1 = require('./hero.service');
-var router_1 = require('@angular/router');
-//import htmlTemplate from './app.component.html';
-//import htmlStyle  from './app.component.css';
-var AppComponent = (function () {
-    function AppComponent() {
-        this.title = 'Tour of heroes';
+var DashboardComponent = (function () {
+    function DashboardComponent() {
     }
-    AppComponent = __decorate([
+    DashboardComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: require('./app.component.html'),
-            styles: [require('./app.component.css').toString()],
-            directives: [router_1.ROUTER_DIRECTIVES],
-            providers: [
-                hero_service_1.HeroService
-            ]
+            selector: 'my-dashboard',
+            template: require('./dashboard.component.html'),
+            styles: [require('./dashboard.component.css').toString()]
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], DashboardComponent);
+    return DashboardComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.DashboardComponent = DashboardComponent;
+//# sourceMappingURL=dashboard.component.js.map
