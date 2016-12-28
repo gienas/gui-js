@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Hello World typescript</title>
+    </head>
+    <body>
+        <div id="root"></div>
+        <div id="minfo"></div>
+        <!-- Main -->
+        <div id="rdiv"></div>
+        <script src="validation/ZipCodeValidator.js"></script>
+        <script src="hellots.js"></script>
+    </body>
+</html>

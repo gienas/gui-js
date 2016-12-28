@@ -1,0 +1,99 @@
+
+class Aaa {
+    private id: number = 1;
+
+    constructor(id: number) {
+        this.id = id;
+    }
+
+    getId(): number {
+        return this.id;
+    }
+
+    /**
+    */
+    setId(id: number) {
+        this.id = id;
+    }
+
+}
+
+interface Bbb {
+    b1: number;
+    b2: number;
+}
+
+let bbb: Bbb = { b1: 1, b2: 2 }
+let aaa: Aaa = new Aaa(100);
+
+abstract class User {
+    protected abstract logIn();
+}
+
+class Employer extends User {
+    constructor(public key: string) {
+        super();
+    }
+    public logIn() {
+    }
+}
+
+let employer: Employer = new Employer('aaa');
+employer.logIn();
+employer.key = 'It is my key';
+
+class Person {
+
+    constructor(public age: number) {
+    }
+
+    makeOlder = () => {
+        this.age++;
+    }
+}
+
+let person: Person = new Person(1);
+person.makeOlder();
+document.getElementById("root").innerHTML = "Age =" + person.age;
+
+const g: Employer = new Employer("ala ma kota");
+g.logIn();
+
+enum Letter {
+    a, b, c
+}
+
+/** */
+class Cycles {
+
+    public go() {
+        let tab = ["ccc", "aaa", "bbb"];
+        let tab2 = new Array("aaa", "bbb", "rrr");
+        tab.push("a");
+        tab.sort();
+
+        for (let elem of tab) {
+            console.log(elem);
+        }
+        for (let elem in tab) {
+            console.log(elem);
+        }
+
+    }
+}
+
+/** */
+class Destructuring {
+    public go(): number {
+        let foo = { aaa: 'It is value after deconstructuring', bbb: 'Ola' };
+        let {aaa, bbb} = foo;
+        console.log(aaa);
+        return 1;
+    }
+}
+
+new Cycles().go();
+new Destructuring().go();
+
+interface Bar { }
+//let abar = Bar;

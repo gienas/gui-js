@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Hello World typescript</title>
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <!-- Main -->
+        <div id="rdiv"></div>
+        <script>
+        function foo() {
+            console.log(this);
+       }
+        foo(); // logs out the global e.g. `window` in browsers
+
+        let bar = {
+              foo
+        }
+        bar.foo();
+        </script>
+    </body>
+</html>

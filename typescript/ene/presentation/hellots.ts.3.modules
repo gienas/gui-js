@@ -1,0 +1,6 @@
+/// <reference path="validation/Validation.ts" />
+/// <reference path="validation/ZipCodeValidator.ts" />
+var zipCodeValidator = new Validation.ZipCodeValidator();
+var result47400 = zipCodeValidator.isAcceptable("47400");
+var resultABCDE = zipCodeValidator.isAcceptable("ABCDE");
+document.getElementById("root").innerHTML = "Validation result for [47400, ABCDE] " + result47400 + ", " + resultABCDE;
