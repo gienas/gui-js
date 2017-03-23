@@ -19,7 +19,7 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
 })
 export class AppComponent {
 
-    title: string = 'Tour of heroes';
+    title: string = 'Tour of heroessssssssssss';
     heroes: Hero[];
     selectedHero: Hero;
 }

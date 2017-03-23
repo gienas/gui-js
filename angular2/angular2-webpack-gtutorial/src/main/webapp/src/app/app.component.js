@@ -8,29 +8,29 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-require('../../public/css/styles.css');
-var hero_service_1 = require('./hero.service');
-var router_1 = require('@angular/router');
+var core_1 = require("@angular/core");
+require("../../public/css/styles.css");
+var hero_service_1 = require("./hero.service");
+var router_1 = require("@angular/router");
 //import htmlTemplate from './app.component.html';
 //import htmlStyle  from './app.component.css';
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = 'Tour of heroes';
+        this.title = 'Tour of heroessssssssssss';
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: 'my-app',
-            template: require('./app.component.html'),
-            styles: [require('./app.component.css').toString()],
-            directives: [router_1.ROUTER_DIRECTIVES],
-            providers: [
-                hero_service_1.HeroService
-            ]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], AppComponent);
     return AppComponent;
 }());
+AppComponent = __decorate([
+    core_1.Component({
+        selector: 'my-app',
+        template: require('./app.component.html'),
+        styles: [require('./app.component.css').toString()],
+        directives: [router_1.ROUTER_DIRECTIVES],
+        providers: [
+            hero_service_1.HeroService
+        ]
+    }),
+    __metadata("design:paramtypes", [])
+], AppComponent);
 exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map
